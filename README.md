@@ -12,3 +12,5 @@ Backyard of different codes and all the wonders (from tiny to huge ones)! :D
 - [ ] string similarity, e.g. embed in N^d then compare
 - [ ] homogeneous data splitting, e.g. test/control with homogeneous mean features
 - [ ] jupyter notebook resource monitoring, e.g. print memory and cpu usage
+- [ ] many p-values permutation estimation
+- [ ] sanic/hug api examples
