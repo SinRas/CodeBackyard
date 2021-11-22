@@ -13,4 +13,4 @@ Backyard of different codes and all the wonders (from tiny to huge ones)! :D
 - [ ] homogeneous data splitting, e.g. test/control with homogeneous mean features
 - [ ] jupyter notebook resource monitoring, e.g. print memory and cpu usage
 - [ ] many p-values permutation estimation
-- [ ] sanic/hug api examples
+- [ ] sanic/hug rest api examples with bearer authentication
