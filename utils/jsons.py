@@ -1,3 +1,5 @@
+"""Loading and Writing/Dumping JSON object shortcut methods
+"""
 # Modules
 import json
 
