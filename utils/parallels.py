@@ -1,3 +1,5 @@
+"""Shortcut method to do parallel mapping
+"""
 # Modules
 import multiprocessing as mp
 

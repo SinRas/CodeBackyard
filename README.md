@@ -3,7 +3,7 @@ Backyard of different codes and all the wonders (from tiny to huge ones)! :D
 
 # TODO
 [x] json
-[ ] multiprocessing `do_parallel`
+[x] multiprocessing `do_parallel`
 [ ] programming lessons, e.g. hello-world, data structures, ...
 [ ] multiprocessing `master`/`worker`/`logger` architecture
 [ ] auction simulations, e.g. second price auction based on historical data
