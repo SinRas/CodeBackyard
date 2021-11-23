@@ -22,7 +22,7 @@ class Worker(mp.Process):
         r = 2*random.random()
         time.sleep( r )
         _duration = time.time() - _start
-        self.log(f"task process result is \"{r}\"", 1)
+        self.log(f"task process result is \"{r}\", process took: {1000*_duration:>3.1f} ms", 1)
         return
     # Generate Tasks
     def run(self):
