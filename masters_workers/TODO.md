@@ -1,0 +1,4 @@
+- [ ] add colors via `colorama` or [python curses](https://docs.python.org/3.9/howto/curses.html)
+- [ ] verbosity levels filter
+- [ ] verbosity levels string instead of numbers
+- [ ] add id to master/worker/logger along with name

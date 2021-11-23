@@ -1,0 +1,6 @@
+# Python
+**/*.pyc
+**/__pycache__
+
+# Masters Workers
+masters_workers/logs_*.txt
