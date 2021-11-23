@@ -38,6 +38,9 @@ class Logger(mp.Process):
             # Break
             if( task is None ):
                 break
+        # Close File
+        self.fp.flush()
+        self.fp.close()
         # Return
         return
     # STR
