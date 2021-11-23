@@ -13,14 +13,33 @@ class Master(mp.Process):
         self.name = name
         self.queue_tasks = queue_tasks
         self.queue_logger = queue_logger
+        self.initialize()
         return
-    # Generate Tasks
+    # Initializations
+    def initialize(self):
+        self.n = 2
+        return
+    # Generate Task
+    def generate_task(self):
+        n = self.n
+        self.n += 1
+        return n
+    # Run
     def run(self):
-        # Generate Tasks
-        for i in range(10):
+        # Broadcast Tasks
+        while True:
+            # Task
+            task = self.generate_task()
+            # Tasks Finished
+            if( task is None ):
+                self.log(
+                    "task generation finished, master shutting down",
+                    0
+                )
+                break
             # Add Task to Queue for Workers
-            self.queue_tasks.put(i)
-            self.log( f"task {i} created", 0 )
+            self.queue_tasks.put(task)
+            self.log( f"task {str(task)} created", 0 )
         # Return
         return
     # STR
