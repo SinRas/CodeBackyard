@@ -4,3 +4,6 @@
 
 # Masters Workers
 masters_workers/logs_*.txt
+
+# Cleanup Script
+cleanup.sh
