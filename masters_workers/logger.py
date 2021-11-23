@@ -20,6 +20,11 @@ class Logger(mp.Process):
         return
     # Generate Tasks
     def run(self):
+        # Intialization
+        log_level = -1
+        msg_log = f"{datetime.datetime.now()} {str(self)} {log_level:>2} logger started"
+        self.fp.write(msg_log+"\n")
+        self.fp.flush()
         # Infinite Loop
         while True:
             task = self.queue_logger.get()
