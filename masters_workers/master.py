@@ -22,6 +22,8 @@ class Master(mp.Process):
     # Generate Task
     def generate_task(self):
         n = self.n
+        if( n >= 10 ):
+            return None
         self.n += 1
         return n
     # Run
